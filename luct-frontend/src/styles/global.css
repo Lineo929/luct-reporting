@@ -1,0 +1,12 @@
+body {
+  background-color: #f7f9fb;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border-radius: 10px;
+}

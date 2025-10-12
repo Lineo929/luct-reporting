@@ -1,0 +1,105 @@
+.landing-page {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.landing-page .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 77, 64, 0.65); /* Dark green overlay for readability */
+  z-index: 1;
+}
+
+.landing-page .content {
+  position: relative;
+  z-index: 2;
+}
+
+.landing-page .logo {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.landing-page h1 {
+  font-size: 3rem;
+}
+
+.landing-page p {
+  font-size: 1.2rem;
+}
+
+.landing-page .btn {
+  border-radius: 30px;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.landing-page .btn:hover {
+  transform: scale(1.05);
+}
+
+.landing-page {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Dark overlay for text visibility */
+  z-index: 1;
+}
+
+header, .features {
+  position: relative;
+  z-index: 2;
+}
+
+.logo {
+  max-width: 120px;
+}
+
+.feature-card {
+  background-color: hsl(209, 100%, 90%);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.features h2 {
+  font-weight: bold;
+  color: snow;
+}
+
+
+@media (max-width: 768px) {
+  .landing-page h1 {
+    font-size: 2.2rem;
+  }
+
+  .landing-page p {
+    font-size: 1rem;
+  }
+
+  .landing-page .btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}

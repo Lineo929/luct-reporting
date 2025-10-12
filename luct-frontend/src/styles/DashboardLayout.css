@@ -1,0 +1,25 @@
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.3s;
+}
+
+.main-content.sidebar-open {
+  margin-left: 220px; /* width of sidebar when open */
+}
+
+.dashboard-content {
+  flex: 1;
+  background-color: #f8f9fa;
+}
+
+/* Navbar overrides */
+.navbar .btn {
+  font-size: 1.2rem;
+}
