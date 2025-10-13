@@ -38,11 +38,6 @@ const Sidebar = ({ isOpen }) => {
       { name: "Rating", path: "/prl/rating" },
       { name: "Classes", path: "/prl/classes" },
     ],
-    admin: [
-      { name: "Dashboard", path: "/admin" },
-      { name: "Users", path: "/admin/users" },
-      { name: "Settings", path: "/admin/settings" },
-    ],
   };
 
   const items = menu[user?.role] || [];

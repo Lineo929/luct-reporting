@@ -3,6 +3,9 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
+/**
+ * Protect route and attach user info
+ */
 export const protect = (req, res, next) => {
   const authHeader = req.headers.authorization;
 
@@ -20,4 +23,3 @@ export const protect = (req, res, next) => {
     return res.status(401).json({ error: "Invalid token" });
   }
 };
-
