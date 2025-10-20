@@ -6,9 +6,10 @@ import dotenv from "dotenv";
 import authRoutes from "./routes/authRoutes.js";
 import studentRoutes from "./routes/studentRoutes.js";
 import lecturerRoutes from "./routes/lecturerRoutes.js";
-//import plRoutes from "./routes/plRoutes.js";
+import plRoutes from "./routes/plRoutes.js";
 import prlRoutes from "./routes/prlRoutes.js";
 import ratingsRoutes from "./routes/ratingRoutes.js";
+import courseRoutes from "./routes/courseRoutes.js";
 
 dotenv.config();
 const app = express();
@@ -21,9 +22,10 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/student", studentRoutes);
 app.use("/api/lecturer", lecturerRoutes);
-//app.use("/api/pl", plRoutes);
+app.use("/api/pl", plRoutes);
 app.use("/api/prl", prlRoutes);
 app.use("/api/ratings", ratingsRoutes);
+app.use("/api/courses", courseRoutes);
 
 // Test route
 app.get("/", (req, res) => res.send("LUCT Reporting API is running 🚀"));

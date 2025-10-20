@@ -44,12 +44,10 @@ const Register = () => {
           <div className="mb-3">
             <label>Role</label>
             <select name="role" className="form-select" onChange={handleChange} required>
-              <option value="">Select Role</option>
               <option value="student">Student</option>
               <option value="lecturer">Lecturer</option>
               <option value="pl">Program Leader (PL)</option>
               <option value="prl">Principal Lecturer (PRL)</option>
-              <option value="admin">Admin</option>
             </select>
           </div>
           <button className="btn btn-primary w-100" type="submit" disabled={loading}>
