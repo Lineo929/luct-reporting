@@ -31,7 +31,7 @@ const Register = () => {
         <form onSubmit={handleSubmit}>
           <div className="mb-3">
             <label>Full Name</label>
-            <input type="text" name="name" className="form-control" onChange={handleChange} required />
+            <input type="text" name="full_name" className="form-control" onChange={handleChange} required />
           </div>
           <div className="mb-3">
             <label>Email</label>
